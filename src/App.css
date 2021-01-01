@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
 }
 
 .App-logo {
@@ -13,15 +15,76 @@
   }
 }
 
-.App-header {
+header {
+  font-family: 'Staatliches', cursive;
+  font-size: 5vh;
   background-color: #282c34;
-  min-height: 100vh;
+  color: #888;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  overflow: scroll;
+}
+
+section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row; 
+}
+
+section.selected {
+  background: #393f4b;
+}
+
+pre {
+  margin: 0;
+  text-align: left;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+i {
+  font-style: normal;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  background: black;
+  padding: 0 3px;
+  color: #757575;
+  font-size: 0.9vw;
+  cursor: default;
+}
+
+.truncate {
+  width: calc(100vw - 20px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article {
+  position: fixed;
+  top: calc(10vh);
+  background: black;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  opacity: 0.8;
+}
+
+article .key {
+  color: #61dafb;
 }
 
 .App-link {
